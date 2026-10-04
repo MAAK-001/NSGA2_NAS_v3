@@ -230,7 +230,7 @@ def train_final_model(
     # ---------------------------------------------------------------
     # Stage B: collapse every manual block and train only its winner.
     # ---------------------------------------------------------------
-    collapse_to_selected_scales(model, selected_scales)
+    collapse_to_selected_scales(model)
 
     # The parameter set changed when two branches + the scale logits were
     # removed, so the old optimizer must never be reused.
