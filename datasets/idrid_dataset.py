@@ -16,7 +16,7 @@ LESIONS = (
 def _find_segmentation_root(root: Path) -> Path:
     """Return the exact IDRiD segmentation directory from the supplied layout."""
 
-    base = root / "IDRID" / "A. Segmentation" / "A. Segmentation"
+    base = root / "IDRID" / "A.%20Segmentation" / "A. Segmentation"
     image_dir = base / "1. Original Images"
     gt_dir = base / "2. All Segmentation Groundtruths"
 
